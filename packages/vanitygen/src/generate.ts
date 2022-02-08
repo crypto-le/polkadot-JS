@@ -27,6 +27,8 @@ export default function generator (test: string[][], options: GeneratorOptions):
     }
 
     console.log('seed是什么？ ',seed)
+    console.log('options.type 是什么？ ',options.type)
+
 
 
   const pair = options.type === 'sr25519'
