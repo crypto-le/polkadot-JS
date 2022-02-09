@@ -30,7 +30,6 @@ export default function generator (test: string[][], options: GeneratorOptions):
     console.log('options.type 是什么？ ',options.type)
 
 
-
   const pair = options.type === 'sr25519'
     ? schnorrkelKeypairFromSeed(seed)
     : naclKeypairFromSeed(seed);
@@ -40,6 +39,7 @@ export default function generator (test: string[][], options: GeneratorOptions):
   const address = encodeAddress(pair.publicKey, options.ss58Format);
 
   const { count, offset } = calculate(test, address, options);
+
 
   return {
     address,

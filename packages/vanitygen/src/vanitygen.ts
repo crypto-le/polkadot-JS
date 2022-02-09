@@ -114,7 +114,7 @@ function showBest (): void {
 
   console.log(`\n`);
 
-  console.log('你是什么破东西啊？：：：：：：：：：：：' ,best);
+  //console.log('你是什么破东西啊？：：：：：：：：：：：' ,best);
 
   console.log(`\r::: ${address.slice(0, offset)}
   
@@ -146,7 +146,7 @@ cryptoWaitReady()
       total += options.runs;
 
       if (nextBest.address !== best.address) {
-        console.log('!!!!!!!!!!!!!!!!!!!!!!!!!!! ',nextBest);
+       // console.log('!!!!!!!!!!!!!!!!!!!!!!!!!!! ',nextBest);
 
         best = nextBest;
         showBest();
